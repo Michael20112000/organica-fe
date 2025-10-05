@@ -1,7 +1,10 @@
+import { Hero, Gallery } from '@/app/sections'
+
 export default function Home() {
-    return (
-        <div>
-            Home
-        </div>
-    );
+  return (
+    <>
+      <Hero />
+      <Gallery />
+    </>
+  )
 }
