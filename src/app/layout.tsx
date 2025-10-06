@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react'
 import type { Metadata } from 'next'
 import { Playfair_Display, Clicker_Script } from 'next/font/google'
+import { Layout } from '@/shared/layout'
 import { cn } from '@/shared/lib'
 import './globals.css'
 
@@ -33,7 +34,7 @@ export default function RootLayout({
           `${playfairDisplay.className} antialiased`,
         )}
       >
-        {children}
+        <Layout>{children}</Layout>
       </body>
     </html>
   )
