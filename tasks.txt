@@ -1,0 +1,2 @@
+- different slugs for pages depending on lang
+- lang switcher

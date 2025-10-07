@@ -1,0 +1,13 @@
+{
+  "HomePage": {
+    "title": "Привіт, світ!"
+  },
+  "common": {
+    "navigation": {
+      "home": "Головна",
+      "aboutUs": "Про нас",
+      "advantages": "Переваги",
+      "contacts": "Контакти"
+    }
+  }
+}
