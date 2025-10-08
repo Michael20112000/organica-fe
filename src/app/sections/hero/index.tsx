@@ -5,7 +5,7 @@ import { styles } from './styles'
 export const Hero = () => {
   return (
     <section className={styles.section}>
-      <Image className={styles.bgImage} src={coffee} alt='Hero background' fill />
+      <Image src={coffee} alt='Hero background' fill objectFit='cover' />
     </section>
   )
 }

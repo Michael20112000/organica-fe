@@ -1,15 +1,11 @@
-import { useState, useEffect } from 'react'
+import { useState } from 'react'
 
 export const useMobileMenu = () => {
-  const [showMobileMenu, setShowMobileMenu] = useState(true)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
 
   const toggleMobileMenu = () => {
     setShowMobileMenu(!showMobileMenu)
   }
-
-  useEffect(() => {
-    document.body.classList.toggle('overflow-y-hidden', showMobileMenu)
-  }, [showMobileMenu])
 
   return {
     showMobileMenu,

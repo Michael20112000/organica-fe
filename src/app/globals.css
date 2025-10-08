@@ -41,7 +41,7 @@
     .container {
         max-width: 73.75rem;
         width: 100%;
-        padding-inline: 1.25rem;
+        padding-inline: 0.625rem;
         margin-inline: auto;
     }
 }
