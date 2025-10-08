@@ -1,23 +1,15 @@
-'use client'
-
-import { useMobileMenu } from './use-mobile-menu'
 import { Logo } from './logo'
-import { Burger } from './burger'
-import { MobileMenu } from './mobile-menu'
+import { HeaderClient } from './header-client'
 import { styles } from './styles'
 
 export const Header = () => {
-  const { showMobileMenu, toggleMobileMenu } = useMobileMenu()
+  console.log('[Header]', typeof window === 'undefined' ? 'Server' : 'Client')
 
   return (
     <header className={styles.header}>
       <div className={styles.container}>
         <Logo />
-        <Burger isActive={showMobileMenu} handlePress={toggleMobileMenu} />
-        <MobileMenu
-          showMobileMenu={showMobileMenu}
-          closeMobileMenu={toggleMobileMenu}
-        />
+        <HeaderClient />
       </div>
     </header>
   )
