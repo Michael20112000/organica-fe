@@ -1,6 +1,7 @@
 import { Logo } from './logo'
-import { MobileNavigation } from './mobile-navigation'
+import { MobileHeader } from './mobile-header'
 import { MobileMenu } from './mobile-menu'
+import { DesktopHeader } from './desktop-header'
 import { styles } from './styles'
 
 export const Header = () => {
@@ -8,7 +9,8 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Logo />
-        <MobileNavigation drawerContent={<MobileMenu />} />
+        <MobileHeader drawerContent={<MobileMenu />} />
+        <DesktopHeader />
       </div>
     </header>
   )

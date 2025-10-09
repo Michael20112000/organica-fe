@@ -27,7 +27,7 @@ export default function RootLayout({
   children: ReactNode
 }>) {
   return (
-    <html lang='en'>
+    <html lang='en' className='no-scrollbar'>
       <body
         className={cn(
           `${playfairDisplay.variable} ${clickerScript.variable}`,

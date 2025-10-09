@@ -1,19 +1,19 @@
 export const useNavigation = () => {
   const linksObj = {
     home: {
-      title: 'home',
+      title: 'Home',
       href: '/',
     },
     aboutUs: {
-      title: 'aboutUs',
+      title: 'About us',
       href: '/about-us',
     },
     advantages: {
-      title: 'advantages',
+      title: 'Advantages',
       href: '/advantages',
     },
     contacts: {
-      title: 'contacts',
+      title: 'Contacts',
       href: '/contacts',
     },
   }

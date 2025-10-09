@@ -1,47 +1,58 @@
 @import "tailwindcss";
 
+@source not inline('container');
+
 @theme {
-    --spacing: 0.063rem;
+  --spacing: 0.063rem;
 
-    --text-*: initial;
-    --text-14: 0.875rem;
-    --text-16: 1rem;
-    --text-18: 1.125rem;
-    --text-20: 1.25rem;
-    --text-22: 1.375rem;
-    --text-26: 1.625rem;
-    --text-28: 1.75rem;
-    --text-32: 2rem;
-    --text-35: 2.188rem;
-    --text-54: 3.375rem;
-    --text-220: 13.75rem;
+  --text-*: initial;
+  --text-14: 0.875rem;
+  --text-16: 1rem;
+  --text-18: 1.125rem;
+  --text-20: 1.25rem;
+  --text-22: 1.375rem;
+  --text-26: 1.625rem;
+  --text-28: 1.75rem;
+  --text-32: 2rem;
+  --text-35: 2.188rem;
+  --text-54: 3.375rem;
+  --text-220: 13.75rem;
 
-    --font-playfair-display: var(--font-playfair-display);
-    --font-clicker-script: var(--font-clicker-script);
+  --font-playfair-display: var(--font-playfair-display);
+  --font-clicker-script: var(--font-clicker-script);
 
-    --color-*: initial;
-    --color-white-1: #fff;
-    --color-white-2: #fffefc;
-    --color-white-3: #fff9f1;
-    --color-cream-1: #f9c06a;
-    --color-cream-2: #ffeed8;
-    --color-gray-1: #707070;
-    --color-brown-1: #603809;
-    --color-black-1: #1e1e1e;
+  --color-*: initial;
+  --color-white-1: #fff;
+  --color-white-2: #fffefc;
+  --color-white-3: #fff9f1;
+  --color-cream-1: #f9c06a;
+  --color-cream-2: #ffeed8;
+  --color-gray-1: #707070;
+  --color-brown-1: #603809;
+  --color-black-1: #1e1e1e;
 
-    --breakpoint-*: initial;
-    --breakpoint-sm: 36rem;
-    --breakpoint-md: 48rem;
-    --breakpoint-lg: 64rem;
-    --breakpoint-lx: 75rem;
-    --breakpoint-2xl: 90rem;
+  --breakpoint-*: initial;
+  --breakpoint-sm: 36rem;
+  --breakpoint-md: 48rem;
+  --breakpoint-lg: 64rem;
+  --breakpoint-xl: 75rem;
+  --breakpoint-2xl: 90rem;
 }
 
 @layer utilities {
-    .container {
-        max-width: 73.75rem;
-        width: 100%;
-        padding-inline: 0.625rem;
-        margin-inline: auto;
-    }
+  .container {
+    max-width: 73.75rem;
+    width: 100%;
+    padding-inline: 1.25rem;
+    margin-inline: auto;
+  }
+
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
 }

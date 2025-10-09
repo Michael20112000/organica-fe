@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 
 export const useDrawer = () => {
   const [isActive, setIsActive] = useState(false)
@@ -6,6 +6,10 @@ export const useDrawer = () => {
   const toggleDrawer = () => {
     setIsActive(!isActive)
   }
+
+  useEffect(() => {
+    document.body.classList.toggle('overflow-y-hidden', isActive)
+  }, [isActive])
 
   return {
     showDrawer: isActive,

@@ -9,7 +9,7 @@ interface IProps {
   drawerContent: ReactNode
 }
 
-export const MobileNavigation: FC<IProps> = ({ drawerContent }) => {
+export const MobileHeader: FC<IProps> = ({ drawerContent }) => {
   const { showDrawer, toggleDrawer } = useDrawer()
   const styles = getStyles(showDrawer)
 
