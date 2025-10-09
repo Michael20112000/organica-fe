@@ -1,27 +1,9 @@
 import Link from 'next/link'
+import { useNavigation } from '@/shared/hooks'
 import { styles } from './styles'
 
 export const Nav = () => {
-  const linksObj = {
-    home: {
-      title: 'home',
-      href: '/',
-    },
-    aboutUs: {
-      title: 'aboutUs',
-      href: '/about-us',
-    },
-    advantages: {
-      title: 'advantages',
-      href: '/advantages',
-    },
-    contacts: {
-      title: 'contacts',
-      href: '/contacts',
-    },
-  }
-
-  const linksArray = Object.values(linksObj)
+  const { linksArray } = useNavigation()
 
   return (
     <nav className={styles.nav}>

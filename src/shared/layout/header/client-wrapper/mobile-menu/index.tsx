@@ -8,5 +8,11 @@ interface IProps {
 
 export const MobileMenu: FC<IProps> = ({ showMobileMenu, nav }) => {
   const styles = getStyles(showMobileMenu)
-  return <div className={styles.mobileMenu}>{nav}</div>
+
+  return (
+    <div className={styles.mobileMenu}>
+      {nav}
+      <div>other</div>
+    </div>
+  )
 }
