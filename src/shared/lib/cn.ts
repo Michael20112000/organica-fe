@@ -1,5 +1,4 @@
-import { extendTailwindMerge } from 'tailwind-merge'
-import { type ClassValue, clsx } from 'clsx'
+import { extendTailwindMerge, type ClassNameValue } from 'tailwind-merge'
 
 const customTwMerge = extendTailwindMerge({
   extend: {
@@ -13,4 +12,5 @@ const customTwMerge = extendTailwindMerge({
   },
 })
 
-export const cn = (...inputs: ClassValue[]) => customTwMerge(clsx(inputs))
+// For WebStorm Tailwind plugin: add this to Experimental config so classes in `cn()` are detected
+export const cn = (...inputs: ClassNameValue[]) => customTwMerge(...inputs)
