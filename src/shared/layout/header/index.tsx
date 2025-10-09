@@ -1,6 +1,6 @@
 import { Logo } from './logo'
-import { ClientWrapper } from './client-wrapper'
-import { Nav } from './nav'
+import { MobileNavigation } from './mobile-navigation'
+import { MobileMenu } from './mobile-menu'
 import { styles } from './styles'
 
 export const Header = () => {
@@ -8,7 +8,7 @@ export const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Logo />
-        <ClientWrapper nav={<Nav />} />
+        <MobileNavigation drawerContent={<MobileMenu />} />
       </div>
     </header>
   )
