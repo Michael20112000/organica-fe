@@ -1,1 +1,1 @@
-export { useNavigation } from './use-navigation'
+export { getNavigation } from './get-navigation'

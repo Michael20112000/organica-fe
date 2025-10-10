@@ -1,18 +1,16 @@
 import Link from 'next/link'
-import { Button } from '@/shared/components'
-import { useNavigation } from '@/shared/hooks'
+import { NavLink, Button } from '@/shared/components'
+import { getNavigation } from '@/shared/hooks'
 import { styles } from './styles'
 
-export const DesktopHeader = () => {
-  const { linksArray } = useNavigation()
+export const DesktopHeader = async () => {
+  const { linksArray } = getNavigation()
 
   return (
     <>
       <nav className={styles.nav}>
-        {linksArray.map(({ href, title }) => (
-          <Link key={href} href={href}>
-            {title}
-          </Link>
+        {linksArray.map(link => (
+          <NavLink key={link.href} {...link} />
         ))}
       </nav>
       <div className={styles.buttonsWrapper}>

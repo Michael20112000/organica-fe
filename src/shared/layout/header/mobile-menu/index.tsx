@@ -1,17 +1,15 @@
-import Link from 'next/link'
-import { useNavigation } from '@/shared/hooks'
+import { NavLink } from '@/shared/components'
+import { getNavigation } from '@/shared/hooks'
 import { styles } from './styles'
 
 export const MobileMenu = () => {
-  const { linksArray } = useNavigation()
+  const { linksArray } = getNavigation()
 
   return (
     <div className={styles.mobileMenu}>
       <nav className={styles.nav}>
         {linksArray.map(link => (
-          <Link key={link.href} href={link.href}>
-            {link.title}
-          </Link>
+          <NavLink key={link.href} {...link} />
         ))}
       </nav>
       <div>Message from server</div>

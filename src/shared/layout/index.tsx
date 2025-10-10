@@ -4,10 +4,10 @@ import { Footer } from './footer'
 
 export const Layout: FC<PropsWithChildren> = ({ children }) => {
   return (
-    <>
+    <div className='min-h-screen flex flex-col'>
       <Header />
-      <main>{children}</main>
+      <main className='grow'>{children}</main>
       <Footer />
-    </>
+    </div>
   )
 }

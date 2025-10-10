@@ -1,4 +1,4 @@
-export const useNavigation = () => {
+export const getNavigation = () => {
   const linksObj = {
     home: {
       title: 'Home',

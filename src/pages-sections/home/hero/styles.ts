@@ -1,5 +1,5 @@
 import { cn } from '@/shared/lib'
 
 export const styles = {
-  section: cn('relative h-screen'),
+  section: cn('offset-top relative h-screen'),
 }

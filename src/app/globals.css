@@ -40,15 +40,16 @@
 }
 
 @layer utilities {
+  .offset-top {
+    @apply pt-62 md:pt-72 lg:pt-102;
+  }
+
   .container {
-    max-width: 73.75rem;
-    width: 100%;
-    padding-inline: 1.25rem;
-    margin-inline: auto;
+    @apply max-w-1180 w-full px-20 mx-auto;
   }
 
   .no-scrollbar::-webkit-scrollbar {
-    display: none;
+    @apply hidden;
   }
 
   .no-scrollbar {
