@@ -1,19 +1,23 @@
-export const getNavigation = () => {
+import { getTranslations } from 'next-intl/server'
+
+export const getNavigation = async () => {
+  const t = await getTranslations('navigation')
+
   const linksObj = {
     home: {
-      title: 'Home',
+      title: t('home'),
       href: '/',
     },
     aboutUs: {
-      title: 'About us',
+      title: t('aboutUs'),
       href: '/about-us',
     },
     advantages: {
-      title: 'Advantages',
+      title: t('advantages'),
       href: '/advantages',
     },
     contacts: {
-      title: 'Contacts',
+      title: t('contacts'),
       href: '/contacts',
     },
   }

@@ -2,8 +2,8 @@ import { NavLink } from '@/shared/components'
 import { getNavigation } from '@/shared/hooks'
 import { styles } from './styles'
 
-export const MobileMenu = () => {
-  const { linksArray } = getNavigation()
+export const MobileMenu = async () => {
+  const { linksArray } = await getNavigation()
 
   return (
     <div className={styles.mobileMenu}>

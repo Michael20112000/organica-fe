@@ -1,8 +1,7 @@
 'use client'
 
 import type { FC } from 'react'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
+import { usePathname, Link } from '@/i18n/navigation'
 import { getStyles } from './styles'
 
 interface IProps {

@@ -4,7 +4,7 @@ import { getNavigation } from '@/shared/hooks'
 import { styles } from './styles'
 
 export const DesktopHeader = async () => {
-  const { linksArray } = getNavigation()
+  const { linksArray } = await getNavigation()
 
   return (
     <>
