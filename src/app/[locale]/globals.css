@@ -16,6 +16,7 @@
   --text-32: 2rem;
   --text-35: 2.188rem;
   --text-54: 3.375rem;
+  --text-120: 7.5rem;
   --text-220: 13.75rem;
 
   --font-playfair-display: var(--font-playfair-display);
@@ -41,7 +42,7 @@
 
 @layer utilities {
   .offset-top {
-    @apply pt-62 md:pt-72 lg:pt-102;
+    @apply pt-62 lg:pt-90;
   }
 
   .container {

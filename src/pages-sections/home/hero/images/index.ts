@@ -1,1 +1,1 @@
-export { default as coffee } from './coffee.jpeg'
+export { default as coffeeBg } from './coffee-bg.jpg'

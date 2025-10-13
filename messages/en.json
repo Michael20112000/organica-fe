@@ -4,5 +4,15 @@
     "aboutUs": "About us",
     "advantages": "Advantages",
     "contacts": "Contacts"
+  },
+  "common": {
+    "buttonText": []
+  },
+  "homePage": {
+    "hero": {
+      "overtitle": "We’ve got your morning covered with",
+      "title": "Coffee",
+      "text": "It is best to start your day with a cup of coffee.<brSmOnly></brSmOnly> Discover the<brMd></brMd> best flavours coffee you will ever have.<brSmOnly></brSmOnly> We provide the best<brMd></brMd> for our customers."
+    }
   }
 }
