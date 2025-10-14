@@ -8,7 +8,13 @@
   "common": {
     "buttonText": [
       "Замовити"
-    ]
+    ],
+    "ariaLabels": {
+      "mobileMenu": {
+        "close": "Закрити мобільне меню",
+        "open": "Відкрити мобільне меню"
+      }
+    }
   },
   "homePage": {
     "hero": {
