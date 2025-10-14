@@ -1,1 +1,1 @@
-export { APIBase } from './api.base'
+export { ApiBase } from './api-base'

@@ -6,10 +6,13 @@
     "contacts": "Contacts"
   },
   "common": {
-    "buttonText": []
+    "buttonText": [
+      "Order Now"
+    ]
   },
   "homePage": {
     "hero": {
+      "bgAlt": "Alternative text",
       "overtitle": "We’ve got your morning covered with",
       "title": "Coffee",
       "text": "It is best to start your day with a cup of coffee.<brSmOnly></brSmOnly> Discover the<brMd></brMd> best flavours coffee you will ever have.<brSmOnly></brSmOnly> We provide the best<brMd></brMd> for our customers."
