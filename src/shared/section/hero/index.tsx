@@ -27,7 +27,7 @@ export const Hero: FC<IHeroProps> = props => {
         <p className={styles.overtitle}>{props.overtitle}</p>
         <h1 className={styles.title}>{props.title}</h1>
         <p className={styles.text}>
-          <RichText translationKey={props.textKey} />
+          <RichText tKey={props.textKey} />
         </p>
         <Button className={styles.button} text={props.buttonText} />
       </div>
