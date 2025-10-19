@@ -47,7 +47,7 @@ export default async function RootLayout({
         <body
           className={cn(
             `${playfairDisplay.variable} ${clickerScript.variable}`,
-            `${playfairDisplay.className} antialiased`,
+            `${playfairDisplay.className} antialiased text-gray-1`,
           )}
         >
           <Layout>{children}</Layout>

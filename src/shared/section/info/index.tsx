@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import Image, { type StaticImageData } from 'next/image'
-import { RichText, Button } from '@/shared/components'
+import { Title, RichText, Button } from '@/shared/components'
 import { styles } from './styles'
 
 interface IInfoProps {
@@ -21,10 +21,8 @@ export const Info: FC<IInfoProps> = ({
   return (
     <section className={styles.section}>
       <div className={styles.container}>
-        <div className={styles.textContent}>
-          <h2 className={styles.title}>
-            <RichText tKey={titleKey} />
-          </h2>
+        <div>
+          <Title tKey={titleKey} />
           <div className={styles.allParagraphsWrapper}>
             {paragraphsKeys.map(key => (
               <p key={key}>

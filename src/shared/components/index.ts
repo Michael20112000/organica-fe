@@ -1,3 +1,5 @@
 export { Button } from './button'
+export { Card1, type ICard1Props } from './card'
 export { NavLink } from './nav-link'
 export { RichText } from './rich-text'
+export { Title } from './title'

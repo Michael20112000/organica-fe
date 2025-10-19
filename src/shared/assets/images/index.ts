@@ -1,2 +1,6 @@
+export { default as cappuccinoImg } from './cappuccino.jpg'
+export { default as chaiLatteImg } from './chai-latte.jpg'
 export { default as cupOfCoffeeFromCoffeeBeansImg } from './cup-of-coffee-from-coffee-beans.png'
+export { default as espressoImg } from './espresso.jpg'
 export { default as fragrantCoffeeImg } from './fragrant-coffee.jpg'
+export { default as macchiatoImg } from './macchiato.jpg'
